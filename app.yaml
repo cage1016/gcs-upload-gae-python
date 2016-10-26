@@ -1,0 +1,16 @@
+application: gcs-python-upload-sample
+version: 1
+runtime: python27
+threadsafe: no
+api_version: 1
+
+handlers:
+
+- url: /.*
+  script: app.router
+  secure: always
+
+libraries:
+
+- name: webapp2
+  version: "2.5.2"
